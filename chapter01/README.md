@@ -49,3 +49,18 @@ Below is a sequence of expressions. What is the result printed by the interprete
     (+ a 1))
 ;Value: 16
 ```
+
+### Exercise 1.2:
+
+Translate the following expression into prefix form:
+
+![\frac{5 + 4 + \left(2 - \left(3 - (6 + \frac{4}{5})\right)\right)}{3(6 - 2)(2 - 7)}`](https://latex.codecogs.com/gif.latex?%5Cfrac%7B5%20&plus;%204%20&plus;%20%5Cleft%282%20-%20%5Cleft%283%20-%20%286%20&plus;%20%5Cfrac%7B4%7D%7B5%7D%29%5Cright%29%5Cright%29%7D%7B3%286%20-%202%29%282%20-%207%29%7D%60)
+
+
+
+```
+1 ]=> ( / (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5)))))
+    (* 3 (- 6 2) (- 2 7)))
+
+;Value: -37/150
+```
